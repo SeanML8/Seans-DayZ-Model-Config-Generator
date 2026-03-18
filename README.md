@@ -43,16 +43,6 @@ Inventory_Base, Clothing_Base, Container_Base, Edible_Base, Weapon_Base, Rifle_B
 4. Review the **Live Preview** panel
 5. Click **Export** to save config.cpp and types.xml
 
-## Building from Source
-
-```bash
-pip install pyinstaller
-python model_config_generator.py              # run directly
-pyinstaller --onefile --windowed --name "DayZ Model Config Generator" model_config_generator.py  # build exe
-```
-
-Requires Python 3.10+ with tkinter (included in standard Python installs on Windows).
-
 ## License
 
 MIT
