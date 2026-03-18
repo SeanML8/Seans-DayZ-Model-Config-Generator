@@ -1,8 +1,8 @@
-# DayZ Model Config Generator
+# Sean's DayZ Model Config Generator
 
 A GUI tool for creating `config.cpp` and `types.xml` entries for custom DayZ mods. Supports both model-swapped retextures and entirely new item definitions.
 
-![Python](https://img.shields.io/badge/Python-3.10+-blue) ![Platform](https://img.shields.io/badge/Platform-Windows-lightgrey) ![Version](https://img.shields.io/github/v/release/SeanML8/DayZ-Model-Config-Generator)
+![Python](https://img.shields.io/badge/Python-3.10+-blue) ![Platform](https://img.shields.io/badge/Platform-Windows-lightgrey) ![Version](https://img.shields.io/github/v/release/SeanML8/Seans-DayZ-Model-Config-Generator)
 
 ## Features
 
