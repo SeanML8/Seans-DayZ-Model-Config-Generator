@@ -2,7 +2,7 @@
 
 A GUI tool for creating `config.cpp` and `types.xml` entries for custom DayZ mods. Supports both model-swapped retextures and entirely new item definitions.
 
-![Python](https://img.shields.io/badge/Python-3.10+-blue) ![Platform](https://img.shields.io/badge/Platform-Windows-lightgrey)
+![Python](https://img.shields.io/badge/Python-3.10+-blue) ![Platform](https://img.shields.io/badge/Platform-Windows-lightgrey) ![Version](https://img.shields.io/github/v/release/SeanML8/DayZ-Model-Config-Generator)
 
 ## Features
 
@@ -13,33 +13,17 @@ A GUI tool for creating `config.cpp` and `types.xml` entries for custom DayZ mod
 - **Auto-fill defaults**: Sensible inventory sizes, weights, and spawn values auto-populate when you select a base class
 - **Import existing configs**: Parse an existing config.cpp to load items back into the editor
 - **Session save/load**: Save your work as a JSON session file and pick up where you left off
+- **Auto-update**: Checks for new releases on startup and can install updates in-app
 - **Dark/Light theme**: Toggle between dark and light mode
 - **Export**: Generate ready-to-use config.cpp and types.xml files
+
+## Download
+
+Grab the latest `DayZ Model Config Generator.exe` from the [Releases](../../releases) page. No Python installation required. The app will notify you when updates are available.
 
 ## Supported Base Classes
 
 Inventory_Base, Clothing_Base, Container_Base, Edible_Base, Weapon_Base, Rifle_Base, Pistol_Base, ItemOptics, ItemSuppressor, HouseNoDestruct, Backpack_Base, HeadGear_Base, Vest_Base, TentBase
-
-## Download
-
-Grab the latest `DayZ Model Config Generator.exe` from the [Releases](../../releases) page. No Python installation required.
-
-## Running from Source
-
-```bash
-python model_config_generator.py
-```
-
-Requires Python 3.10+ with tkinter (included in standard Python installs on Windows).
-
-## Building the Executable
-
-```bash
-pip install pyinstaller
-pyinstaller --onefile --windowed --name "DayZ Model Config Generator" model_config_generator.py
-```
-
-The exe will be in the `dist/` folder.
 
 ## Keyboard Shortcuts
 
@@ -58,6 +42,16 @@ The exe will be in the `dist/` folder.
 3. Edit each item's properties in the tabbed editor (General, Model, Textures, Inventory, Types.xml)
 4. Review the **Live Preview** panel
 5. Click **Export** to save config.cpp and types.xml
+
+## Building from Source
+
+```bash
+pip install pyinstaller
+python model_config_generator.py              # run directly
+pyinstaller --onefile --windowed --name "DayZ Model Config Generator" model_config_generator.py  # build exe
+```
+
+Requires Python 3.10+ with tkinter (included in standard Python installs on Windows).
 
 ## License
 
